@@ -9,16 +9,19 @@ import java.util.Scanner;
 
 public class exercise {
     public static void main(String[] args) {
-        // prompt for name
-        System.out.print("What is your name? ");
+        // prompt for string
+        System.out.print("What is the input string? ");
 
         // create new scanner
         Scanner input = new Scanner(System.in);
 
-        // read user's name
-        String name = input.nextLine();
+        // read user's response
+        String response = input.nextLine();
 
-        // output
-        System.out.print("Hello, " + name + ", nice to meet you!");
+        // get length of response
+        int length = response.length();
+
+        // output response along with its length
+        System.out.print(response + " has " + length + " characters.");
     }
 }
